@@ -1,0 +1,97 @@
+{
+  "at": "2026-09-16T15:16:47.165Z",
+  "browser": "Chromium / msedge",
+  "results": [
+    {
+      "name": "开场无标题或术语剧透",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "首次目击约五秒后自动封存",
+      "status": "PASS",
+      "detail": "5460 ms（DOM观测）"
+    },
+    {
+      "name": "观看后刷新不能回看",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "错误首答刷新后仍保存，纠错60分",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "提示状态刷新后保留，答对30分",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "两次记录独立保存，揭晓正确比较并定位证据",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "完整17页链条与混合计分78分",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "反思刷新保存、文本安全和记录下载",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "响应式全部常规页面无横向溢出",
+      "status": "PASS",
+      "detail": "320px"
+    },
+    {
+      "name": "响应式全部常规页面无横向溢出",
+      "status": "PASS",
+      "detail": "390px"
+    },
+    {
+      "name": "响应式全部常规页面无横向溢出",
+      "status": "PASS",
+      "detail": "768px"
+    },
+    {
+      "name": "重新开始只清本关，标记重玩",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "目击中刷新立即封存，不能重新计时",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "浏览器返回不能解锁目击画面",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "localStorage不可写时显示警告且可继续",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "图片加载失败不启动五秒计时",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "直接打开本地HTML可运行",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "全程无JavaScript运行错误",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "errors": []
+}

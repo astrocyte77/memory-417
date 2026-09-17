@@ -18,7 +18,7 @@ python -m http.server 4173
 
 ## 在线作品
 
-发布目标为本仓库的 GitHub Pages。正式地址见 `docs/发布记录.md`；尚未验证的 URL 不当作已经上线。
+[直接试玩：4:17](https://astrocyte77.github.io/memory-417/)。已于 2026-09-17 实际打开核验，发布记录见 `docs/发布记录.md`。
 
 ## 功能
 
@@ -77,3 +77,4 @@ node tests/browser.test.cjs
 心理学背景：[APA 误导信息效应](https://dictionary.apa.org/misinformation-effect)；[Johnson、Hashtroudi 与 Lindsay，1993，Source monitoring](https://pubmed.ncbi.nlm.nih.gov/8346328/)。本章不是对经典实验的严格复现。
 
 本作是虚构教学体验，不用于个人诊断、正式测量或成绩认证。尚未进行真实目标玩家试玩；5—10 分钟为设计目标。源代码公开便于评阅，并不等于授予未声明的第三方使用许可。
+

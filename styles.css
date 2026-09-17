@@ -6,3 +6,7 @@
 @media(max-width:600px){body{font-size:16px}.topbar{padding:15px 5%;gap:12px}.edition,#save-status{display:none}.brand{gap:9px;font-size:15px}.header-right{gap:8px}#app{padding:22px 5% 10px;min-height:78vh}.hero{min-height:640px}.hero:after{background:linear-gradient(90deg,#0c161bdd,#0c161b69),linear-gradient(0deg,#0c161be0,transparent)}.hero-art{object-position:65% center}.hero-copy{padding:35px 24px}.hero-copy p{font-size:16px}.time{font-size:100px}.hero-foot{gap:17px;flex-wrap:wrap;font-size:12px}.primary,.secondary{padding:12px 18px}.actions .primary{flex-grow:1}.actions .quiet{margin:0}.sheet{margin:0}.multi{grid-template-columns:1fr}.choice{padding:15px;gap:12px}.question-number{font-size:50px}.question-kicker{font-size:12px}.question-prompt{font-size:25px}.bottom{padding:18px 5%;gap:12px;font-size:11px}.detail-fields{grid-template-columns:1fr}.scene-head{font-size:12px}.exposure{padding-top:10vh}.blackout{min-height:65vh}.replay-title{display:block}.reversal{padding:36px 20px}.reversal .you{font-size:60px}.score-card{padding:24px}.score{font-size:85px}.reveal-layout{gap:15px}.compare-box{padding:20px}.eyebrow{font-size:12px;margin-bottom:16px}.rule-note{line-height:1.7}.actions{gap:12px}.actions>*{max-width:100%}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 .compare-box details summary{color:#805024}.compare-box h3{margin-top:20px}
+
+/* 分行展示实验步骤与解析，保持手机阅读顺序。 */
+.choice > span:last-child,.feedback > span{white-space:pre-line}
+

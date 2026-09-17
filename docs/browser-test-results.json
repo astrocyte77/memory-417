@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-16T15:16:47.165Z",
+  "at": "2026-09-17T09:50:13.158Z",
   "browser": "Chromium / msedge",
   "results": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "首次目击约五秒后自动封存",
       "status": "PASS",
-      "detail": "5460 ms（DOM观测）"
+      "detail": "5400 ms（DOM观测）"
     },
     {
       "name": "观看后刷新不能回看",
@@ -23,12 +23,17 @@
       "detail": ""
     },
     {
-      "name": "提示状态刷新后保留，答对30分",
+      "name": "诱导补充仅记录不纠错不计分，刷新封存",
       "status": "PASS",
       "detail": ""
     },
     {
       "name": "两次记录独立保存，揭晓正确比较并定位证据",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "揭晓后Q2提示保存且计30分",
       "status": "PASS",
       "detail": ""
     },
@@ -69,6 +74,11 @@
     },
     {
       "name": "浏览器返回不能解锁目击画面",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "旧版进度不会套用新版页码",
       "status": "PASS",
       "detail": ""
     },

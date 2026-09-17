@@ -7,7 +7,8 @@ check('wrong then hint then correct = 30',()=>{let q=C.answer(C.fresh().question
 check('solved record cannot be rescored or hinted',()=>{let q=C.answer(C.fresh().questions[0],2,2);assert.strictEqual(C.answer(q,0,2),q);assert.strictEqual(C.hint(q),q);});
 check('score mixed categories = 64',()=>{const result=C.summary([100,60,30,100,70-40].map(points=>({points})));assert.deepEqual(result,{score:64,independent:2,corrected:1,hinted:2});});
 check('4 independent and 1 corrected = 92',()=>assert.equal(C.summary([100,100,100,100,60].map(points=>({points}))).score,92));
-check('all 10 comparison combinations',()=>{for(const selected of [true,false])for(let choice=0;choice<5;choice++){const r=C.comparison({items:selected?['雨伞']:[]},choice);assert.equal(r.kind,selected?'initial':choice<2?'changed':choice===3?'uncertain':'stable');}});
+check('comparison treats mention and negation conservatively',()=>{for(const text of ['有雨伞','没有雨伞','不确定有没有伞'])for(let choice=0;choice<5;choice++)assert.equal(C.comparison({text},choice).kind,'mentioned');for(let choice=0;choice<5;choice++)assert.equal(C.comparison({text:''},choice).kind,choice<2?'changed':choice===3?'uncertain':'stable');assert.equal(C.comparison({text:'椅子',other:'没有伞'},0).kind,'mentioned');});
+check('teaching follows sealed second memory and reveal',()=>{assert.deepEqual(S.questions.map(q=>q.page),[3,9,10,11,12]);assert(!S.firstOptions.includes('雨伞'));assert.equal(S.pages[7].title,'补完现场记录');assert.equal(S.pages[8].title,'回到 4:17');});
 check('state survives JSON serialization',()=>assert.ok(C.valid(JSON.parse(JSON.stringify(C.fresh())))));
 check('corrupt schema rejected',()=>{assert.equal(C.valid(null),false);const s=C.fresh();s.page=99;assert.equal(C.valid(s),false);});
 console.log(`${passed} test groups passed.`);
